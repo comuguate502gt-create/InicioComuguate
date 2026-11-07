@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://TU-DOMINIO.vercel.app/">
+<meta property="og:url" content="https://TU-DOMINIO.vercel.app/">
+<meta property="og:site_name" content="ComuGuate">
+<meta property="og:locale" content="es_GT">
+<meta name="theme-color" content="#0d4b67">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<meta name="description" content="ComuGuate, agencia de reclutamiento para trabajos agrícolas y no agrícolas en el exterior.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ComuGuate | Más que una agencia de reclutamiento">
+<meta property="og:description" content="Oportunidades laborales agrícolas y no agrícolas en el exterior. Más de 10,000 personas, 3,000 empleadores y 15 sectores de trabajo.">
+<meta property="og:image" content="https://TU-DOMINIO.vercel.app/assets/comuguate-vista-previa.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ComuGuate: oportunidades laborales en el exterior, más de 10,000 personas, 3,000 empleadores y 15 sectores de trabajo.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ComuGuate | Más que una agencia de reclutamiento">
+<meta name="twitter:description" content="Oportunidades laborales agrícolas y no agrícolas en el exterior.">
+<meta name="twitter:image" content="https://TU-DOMINIO.vercel.app/assets/comuguate-vista-previa.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Jost:wght@600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<title>COMUGUATE | Agencia de reclutamiento</title>
+<style>
+:root{--green:#174f32;--green2:#287447;--gold:#c8a65a;--ink:#252a27;--muted:#66716a;--light:#f4f6f3}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.65}
+a{color:inherit;text-decoration:none} .topbar{background:var(--green);color:white;padding:8px 5%;font-size:12px;letter-spacing:.04em}
+header{position:sticky;top:0;z-index:20;background:#fff;box-shadow:0 2px 14px #00000012}
+.navwrap{max-width:1200px;margin:auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand img{width:160px;height:auto;display:block} nav{display:flex;align-items:center;gap:21px;flex-wrap:wrap;font-size:12px;font-weight:700;letter-spacing:.04em}
+nav a{padding:8px 0} nav a:hover{color:var(--green2)} .contactbtn{background:var(--green);color:#fff!important;padding:11px 18px;border-radius:2px}
+.menu-toggle{display:none;background:var(--green);color:white;border:0;padding:9px 12px;font-size:20px}
+.hero{min-height:560px;position:relative;background-size:cover;background-position:center;display:flex;align-items:center;color:white;transition:background-image .5s}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#10291fdd,#10291f55)}
+.hero-inner{position:relative;z-index:1;width:min(1100px,90%);margin:auto;padding:90px 0}
+.eyebrow{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#e8d6a7;font-weight:bold}
+.hero h1{font-size:clamp(36px,5vw,62px);line-height:1.1;max-width:700px;margin:14px 0}
+.hero p{font-size:20px;max-width:570px;margin:0 0 26px} .btn{display:inline-block;background:var(--gold);color:#17251d;padding:13px 24px;font-size:12px;font-weight:bold;letter-spacing:.08em}
+.dots{position:absolute;bottom:25px;left:5%;z-index:2;display:flex;gap:8px} .dots button{width:9px;height:9px;border-radius:50%;border:1px solid white;background:transparent;padding:0} .dots button.active{background:white}
+.wrap{width:min(1100px,90%);margin:auto} .section{padding:85px 0} .section-title{font-size:13px;color:var(--green2);font-weight:bold;letter-spacing:.18em;text-transform:uppercase}
+h2{font-size:34px;line-height:1.2;margin:8px 0 22px;color:var(--green)} .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-copy p{color:#5d665f} .about-photo img{width:100%;height:430px;object-fit:cover;display:block}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:24px} .gallery img{width:100%;height:180px;object-fit:cover}
+.values{background:var(--light)} .three{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.info-card{background:white;padding:32px 26px;border-top:3px solid var(--gold);min-height:220px} .info-card h3{color:var(--green);font-size:20px;margin:0 0 12px}
+.info-card p{margin:0;color:#657068} .value-list{display:flex;flex-wrap:wrap;gap:9px;padding:0;list-style:none} .value-list li{background:#edf2ed;padding:7px 11px;font-size:13px}
+.stats{background:#0d4b67;color:#fff;padding:68px 0} .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center}
+.stat strong{font-size:44px;color:#fff;display:block;line-height:1.2;font-weight:400;font-variant-numeric:tabular-nums} .stat span{font-size:18px;font-weight:700;display:block;max-width:340px;margin:22px auto 0}.stat-icon{width:112px;height:82px;fill:#fff;display:block;margin:0 auto 8px}.plane-icon{width:125px;height:82px}
+.contact{background:#f5f6f4} .contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px} .contact-item{margin:20px 0} .contact-item b{display:block;color:var(--green);font-size:12px;letter-spacing:.12em}
+footer{background:#102b1e;color:#e8eee9;padding:42px 0 20px} .foot-top{display:flex;justify-content:space-between;align-items:center;gap:30px} .foot-top img{width:170px} .foot-links{display:flex;gap:18px;flex-wrap:wrap;font-size:12px} .copyright{border-top:1px solid #ffffff30;margin-top:30px;padding-top:18px;font-size:12px;color:#c5d0c8}
+@media(max-width:850px){.menu-toggle{display:block} nav{display:none;position:absolute;left:0;right:0;top:100%;background:white;padding:18px 6%;box-shadow:0 8px 15px #0002;flex-direction:column;align-items:flex-start;gap:8px} nav.open{display:flex} .about-grid,.contact-grid{grid-template-columns:1fr;gap:28px} .three{grid-template-columns:1fr} .gallery{grid-template-columns:repeat(2,1fr)} .stats-grid{grid-template-columns:1fr;gap:35px} .hero{min-height:500px} .foot-top{align-items:flex-start;flex-direction:column}}
+@media(max-width:480px){.brand img{width:135px} .navwrap{padding:10px 5%} .hero-inner{padding:75px 0} .hero p{font-size:17px} .section{padding:60px 0} h2{font-size:29px} .gallery img{height:130px}}
+
+/* Ajustes de diseño móvil y elementos flotantes */
+.topbar{display:none}
+header.floating-header{position:fixed;inset:0 0 auto 0;height:0;background:transparent;box-shadow:none;z-index:1000}
+.floating-logo{position:absolute;top:24px;left:4%;width:clamp(145px,31vw,220px);z-index:1002}
+.floating-logo img{display:block;width:100%;height:auto;object-fit:contain}
+.floating-menu{display:block;position:absolute;top:28px;right:4%;z-index:1003;width:58px;height:58px;border:0;border-radius:6px;background:#fff;color:#164b61;font-size:34px;line-height:1;box-shadow:0 2px 12px #0002}
+.floating-nav{display:none;position:absolute;top:98px;right:4%;width:min(320px,90vw);max-height:75vh;overflow:auto;background:#fff;padding:18px 22px;box-shadow:0 12px 30px #0003;border-radius:7px;flex-direction:column;align-items:stretch;gap:4px;font-size:13px}
+.floating-nav.open{display:flex}
+.floating-nav a{padding:10px 4px;border-bottom:1px solid #e9eeeb}
+.floating-nav .contactbtn{padding:12px 14px;margin-top:8px;text-align:center}
+.hero{height:100svh;min-height:620px;max-height:1000px;position:relative;background-size:cover;background-position:center center;display:flex;align-items:flex-end;justify-content:center;text-align:center;color:white;overflow:hidden}
+.hero:before{background:linear-gradient(180deg,#092b3850 0%,#00000005 35%,#00000022 58%,#00000088 100%)}
+.hero-inner{width:min(900px,92%);margin:0 auto;padding:0 0 clamp(115px,16vh,190px);text-align:center}
+.hero .eyebrow{font-size:clamp(15px,2.4vw,22px);letter-spacing:.2em;color:#fff;font-weight:800;margin-bottom:30px}
+.hero h1{font-size:clamp(38px,7.5vw,68px);line-height:1.02;letter-spacing:-.025em;max-width:850px;margin:0 auto 32px;font-weight:900;text-transform:uppercase}
+.hero p{font-size:clamp(15px,2.5vw,22px);line-height:1.2;letter-spacing:.17em;font-weight:800;max-width:760px;margin:0 auto;color:#fff}
+.dots{display:none!important}
+.whatsapp-float{position:fixed;right:5%;bottom:30px;z-index:1100;width:92px;height:92px;border-radius:50%;background:#f00012;color:white;display:flex;align-items:center;justify-content:center;box-shadow:0 5px 18px #0003}
+.whatsapp-float:before{content:"";position:absolute;width:42px;height:36px;border:3px solid white;border-radius:50%;transform:rotate(-8deg)}
+.whatsapp-float:after{content:"";position:absolute;left:25px;bottom:22px;width:12px;height:12px;border-left:3px solid white;border-bottom:3px solid white;transform:skew(-25deg) rotate(-28deg)}
+.wa-mark{font-size:0}
+.reveal-section,.reveal-item{opacity:0;transform:translateX(75px);transition:opacity .85s ease,transform .85s cubic-bezier(.2,.75,.2,1)}
+.reveal-section.is-visible,.reveal-item.is-visible{opacity:1;transform:translateX(0)}
+.reveal-item:nth-child(2){transition-delay:.12s}.reveal-item:nth-child(3){transition-delay:.24s}
+@media(min-width:851px){.floating-logo{top:22px;width:190px}.floating-menu{display:none}.floating-nav{display:flex;position:absolute;top:25px;right:3%;width:auto;max-height:none;overflow:visible;background:transparent;padding:0;box-shadow:none;flex-direction:row;align-items:center;gap:12px;font-size:10px}.floating-nav a{color:white;text-shadow:0 1px 4px #0009;border:0;padding:8px 0}.floating-nav .contactbtn{background:#174f32;padding:10px 13px}.hero-inner{padding-bottom:150px}}
+@media(max-width:850px){.about-grid{display:block}.about-photo{margin-top:28px}.section{padding:65px 0}.about-copy p{text-align:justify;font-size:17px;line-height:1.9}.section-title{text-align:center;font-size:15px;letter-spacing:.18em}.about-copy h2{text-align:center}.gallery{grid-template-columns:repeat(2,1fr)}.whatsapp-float{width:82px;height:82px;right:5%;bottom:25px}}
+@media(prefers-reduced-motion:reduce){.reveal-section,.reveal-item{transition:none;transform:none;opacity:1}}
+
+/* Carruseles automáticos con zoom progresivo */
+.hero{isolation:isolate;background:none!important}
+.hero-photo{position:absolute;inset:0;z-index:0;background-size:cover;background-position:center center;opacity:0;transform:scale(1);will-change:transform,opacity}
+.hero-photo.active{opacity:1;animation:heroKenBurns 7s ease-in-out both}
+@keyframes heroKenBurns{0%{transform:scale(1)}100%{transform:scale(1.15)}}
+.hero:before{z-index:1;pointer-events:none}
+.hero-inner{z-index:2}
+.gallery-carousel{margin-top:35px}
+.gallery-stage{position:relative;width:100%;height:clamp(340px,75vw,700px);overflow:hidden;background:#e9eee9}
+.gallery-main{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1);animation:galleryKenBurns 7s ease-in-out both;will-change:transform}
+.gallery-main.zooming{animation:none}
+@keyframes galleryKenBurns{0%{transform:scale(1)}100%{transform:scale(1.16)}}
+.gallery-shade{position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg,#00000015,transparent 35%)}
+.gallery-thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
+.gallery-thumb{display:block;padding:0;border:3px solid transparent;background:none;overflow:hidden;height:clamp(105px,30vw,220px);cursor:pointer}
+.gallery-thumb img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .6s ease}
+.gallery-thumb.active{border-color:var(--gold)}
+.gallery-thumb:active img{transform:scale(1.08)}
+@media(max-width:600px){.gallery-stage{height:clamp(360px,112vw,650px)}.gallery-thumbs{grid-template-columns:repeat(2,1fr);gap:12px}.gallery-thumb{height:clamp(130px,38vw,210px)}}
+@media(prefers-reduced-motion:reduce){.hero-photo.active,.gallery-main{animation:none!important;transform:none!important}}
+
+/* Galería en un único marco, igual que la portada */
+.gallery-carousel{margin-top:35px;width:min(1100px,90%)}
+.gallery-stage{position:relative;width:100%;height:clamp(390px,72svh,760px);aspect-ratio:4/5;overflow:hidden;background:#e9eee9}
+.gallery-photo{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover;object-position:center;opacity:0;transform:scale(1);transition:opacity 1.1s ease;will-change:transform,opacity}
+.gallery-photo.active{opacity:1;animation:galleryKenBurns 7s ease-in-out both}
+@keyframes galleryKenBurns{0%{transform:scale(1)}100%{transform:scale(1.14)}}
+.gallery-shade{position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg,#00000012,transparent 40%)}
+.gallery-thumbs{display:none!important}
+@media(max-width:600px){.gallery-stage{height:clamp(420px,78svh,720px);aspect-ratio:auto}}
+@media(prefers-reduced-motion:reduce){.gallery-photo.active{animation:none!important;transform:none!important}}
+
+/* Galería limpia: conservar únicamente el carrusel principal */
+.about-photo,
+.gallery,
+.gallery-thumbs {
+  display: none !important;
+}
+.about-grid {
+  grid-template-columns: 1fr;
+}
+
+
+/* Evaluación preliminar de perfil */
+.evaluation{background:#f4f6f3}
+.eval-intro{max-width:760px;margin-bottom:28px;color:#5d665f}
+.eval-card{max-width:850px;margin:auto;background:#fff;padding:clamp(22px,4vw,42px);border-radius:8px;box-shadow:0 8px 30px #102b1e12}
+.eval-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.eval-field{display:flex;flex-direction:column;gap:7px}
+.eval-field.full{grid-column:1/-1}
+.eval-field label,.eval-label{font-weight:700;color:var(--green);font-size:14px}
+.eval-field input,.eval-field select{width:100%;padding:13px 12px;border:1px solid #ccd5ce;border-radius:4px;font:inherit;background:#fff;color:var(--ink)}
+.eval-field input:focus,.eval-field select:focus{outline:2px solid #28744755;border-color:var(--green2)}
+.eval-required{color:#a22}
+.eval-submit,.eval-wa{display:inline-block;border:0;border-radius:3px;padding:14px 22px;font-weight:700;letter-spacing:.03em;cursor:pointer;text-align:center}
+.eval-submit{background:var(--green);color:#fff;margin-top:24px}
+.eval-wa{background:#168b50;color:#fff;margin-top:12px}
+.eval-note{font-size:12px;color:#66716a;margin:15px 0 0}
+.eval-result{display:none;margin-top:28px;padding:24px;background:#f2f6f1;border-left:4px solid var(--gold);border-radius:4px}
+.eval-result h3{color:var(--green);margin:0 0 8px}
+.eval-score{font-size:14px;color:#526057}
+.eval-result p{margin:10px 0}
+.eval-result ul{padding-left:20px}
+.eval-result .eval-wa{width:100%}
+@media(max-width:600px){.eval-grid{grid-template-columns:1fr}.eval-field.full{grid-column:auto}.eval-card{padding:20px}}
+
+
+/* ===== Footer: estilo claro con logotipo a color ===== */
+footer{background:linear-gradient(180deg,#e9eff3 0,#fff 150px);color:#333;padding:56px 0 48px;text-align:center}
+footer .wrap{display:flex;flex-direction:column;align-items:center}
+footer .foot-top{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px;width:100%}
+footer .foot-top img{width:min(280px,76%);height:auto;display:block;margin:0 auto}
+footer .foot-links{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 24px;max-width:460px;font-family:"Montserrat","Segoe UI",Arial,sans-serif;font-size:15px;font-weight:800;letter-spacing:.02em;text-transform:uppercase;line-height:1.3}
+footer .foot-links a{color:#9b1216;transition:color .2s}
+footer .foot-links a:first-child{color:#0b5f8f}
+footer .foot-links a:hover{color:#0b5f8f}
+footer .foot-links a:first-child:hover{color:#9b1216}
+footer .copyright{border-top:0;margin-top:34px;padding:0 20px;font-family:"Montserrat","Segoe UI",Arial,sans-serif;font-size:13px;color:#3a3a3a;line-height:1.6}
+@media(min-width:851px){footer{padding:70px 0 56px} footer .foot-top img{width:300px} footer .foot-links{max-width:none;font-size:15px;gap:14px 34px}}
+@media(max-width:850px){footer{padding-bottom:110px}}
+
+/* ===== Contacto: tarjetas blancas con iconos sobre degradado azul-rojo ===== */
+.contact{background:linear-gradient(180deg,#0f476b 0%,#5b2c42 55%,#8f1a1f 100%);padding:72px 0 80px}
+.contact .contact-grid{display:block}
+.contact .contact-grid>div:first-child{text-align:center;margin-bottom:34px}
+.contact .section-title{color:#8fb4cc;font-size:13px}
+.contact h2{font-family:"Roboto",Arial,sans-serif;font-weight:700;text-transform:uppercase;color:#467794;font-size:clamp(28px,7.4vw,46px);line-height:1.12;margin:10px auto 12px;max-width:760px}
+.contact .contact-grid>div:first-child p{color:#d3e2ec;margin:0;font-family:"Roboto",Arial,sans-serif}
+.contact .contact-grid>div:last-child{display:grid;grid-template-columns:1fr;gap:16px}
+.contact .contact-item{margin:0;background:#fff;border-radius:14px;padding:30px 24px 36px;text-align:center;color:#123f5e;font-family:"Roboto",Arial,sans-serif;font-weight:500;font-size:17px;line-height:1.65}
+.contact .contact-item:before{content:"";display:block;width:68px;height:68px;border-radius:50%;margin:0 auto 24px;background-color:#a91010;background-repeat:no-repeat;background-position:center;background-size:46%}
+.contact .contact-item:nth-child(1):before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 3.2c-4.9 0-8.5 3.4-8.5 7.7 0 1.5.4 2.8 1.2 4L3.8 19.5l4-1.1c1.2.6 2.6.9 4.2.9 4.9 0 8.5-3.4 8.5-7.7S16.900 3.200 12 3.200z' fill='none' stroke='%23fff' stroke-width='1.900' stroke-linejoin='round'/%3E%3Ccircle cx='9.300' cy='9.600' r='1.100' fill='%23fff'/%3E%3Ccircle cx='14.700' cy='9.600' r='1.100' fill='%23fff'/%3E%3Cpath d='M8.700 12.600c1.900 1.800 4.700 1.800 6.600 0' fill='none' stroke='%23fff' stroke-width='1.700' stroke-linecap='round'/%3E%3Ccircle cx='8.800' cy='19.400' r='1.700' fill='%23fff'/%3E%3Ccircle cx='15.200' cy='19.400' r='1.700' fill='%23fff'/%3E%3C/svg%3E");background-size:50%}
+.contact .contact-item:nth-child(2):before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M6.620 10.790c1.440 2.830 3.760 5.140 6.590 6.590l2.200-2.200c.27-.27.67-.36 1.020-.24 1.120.37 2.330.57 3.570.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.390 0-17-7.610-17-17 0-.55.45-1 1-1h3.500c.55 0 1 .45 1 1 0 1.250.2 2.450.57 3.570.11.35.03.74-.25 1.020l-2.200 2.200z'/%3E%3C/svg%3E");background-size:44%}
+.contact .contact-item:nth-child(3):before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M8 2.500h12.500c.8 0 1.500.7 1.500 1.500v7.500c0 .8-.7 1.500-1.500 1.500H8z'/%3E%3Cpath fill='%23a91010' d='M10.500 5.200h8v1.600h-8zM10.500 8.400h8V10h-8z'/%3E%3Cpath fill='%23fff' d='M2 10.500c0-.8.7-1.500 1.500-1.500h10c.8 0 1.500.7 1.500 1.500v8c0 .8-.7 1.500-1.500 1.500h-10C2.700 20 2 19.300 2 18.500z'/%3E%3Cpath fill='none' stroke='%23a91010' stroke-width='1.500' stroke-linejoin='round' d='M3 11l5.500 4.200L14 11'/%3E%3C/svg%3E");background-size:48%}
+.contact .contact-item b{font-family:"Roboto",Arial,sans-serif;font-weight:700;font-size:23px;letter-spacing:0;text-transform:uppercase;color:#0e4263;margin:0 0 14px}
+.contact .contact-item a{color:inherit}
+@media(min-width:851px){.contact .contact-grid>div:last-child{grid-template-columns:repeat(3,1fr);gap:24px}.contact .contact-item{padding:36px 28px 42px}}
+
+/* ===== Misión / Valores / Visión: tarjetas blancas con sombra ===== */
+.values{background:#fff}
+.values .three{gap:16px}
+.values .info-card{background:#fff;border-top:0;border-radius:0;min-height:0;padding:52px 49px 64px;text-align:center;box-shadow:0 3px 18px #0000002e}
+.values .info-card h3{font-family:"Jost","Montserrat",Arial,sans-serif;font-weight:600;font-size:36px;line-height:1.1;letter-spacing:-.01em;text-transform:uppercase;color:#0e4263;margin:0 0 34px}
+.values .info-card p{font-family:"Roboto",Arial,sans-serif;font-size:17px;line-height:1.9;color:#222;text-align:justify;margin:0}
+.values .value-list{display:block;margin:0;padding:0;list-style:none}
+.values .value-list li{background:none;padding:0;font-family:"Roboto",Arial,sans-serif;font-size:17px;line-height:1.9;color:#222;text-align:center}
+@media(min-width:851px){.values .three{gap:26px;align-items:stretch}.values .info-card{padding:56px 34px 64px}.values .info-card h3{font-size:34px}}
+</style>
+</head>
+<body>
+<div class="topbar">COMUGUATE · AGENCIA DE RECLUTAMIENTO</div>
+<header class="floating-header">
+<a class="floating-logo" href="#inicio" aria-label="ComuGuate - inicio"><img src="assets/img/logo-flotante.webp" alt="ComuGuate"></a>
+<button class="menu-toggle floating-menu" aria-label="Abrir menú" aria-expanded="false" onclick="const n=document.querySelector('nav');const o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+<nav class="floating-nav">
+<a href="#inicio">INICIO</a><a href="#evaluacion">EVALÚA TU PERFIL</a><a href="#quienes-somos">QUIÉNES SOMOS</a><a href="#mision">MISIÓN</a><a href="#valores">VALORES</a><a href="#vision">VISIÓN</a><a href="#empleadores">EMPLEADORES</a><a href="#idiomas">INGLÉS / FRANCÉS</a><a href="#faq">FAQ</a><a href="#noticias">NOTICIAS</a><a href="#prevencion">PREVENCIÓN DE ESTAFAS</a><a class="contactbtn" href="#contacto">CONTÁCTANOS</a>
+</nav></header>
+<main>
+<section class="hero" id="inicio"><div class="hero-photo photo-a"></div><div class="hero-photo photo-b"></div>
+<div class="hero-inner"><div class="eyebrow">MÁS QUE UNA</div><h1>AGENCIA DE<br>RECLUTAMIENTO</h1><p>PARA TRABAJOS AGRÍCOLAS Y NO AGRÍCOLAS EN EL EXTERIOR</p></div>
+</section>
+<section class="section reveal-section" id="quienes-somos"><div class="wrap about-grid">
+<div class="about-copy"><div class="section-title">QUIÉNES SOMOS</div><h2>COMUGUATE</h2>
+<p>ComuGuate fue fundada en octubre de 2013 con la intención de ser una agencia de reclutamiento comprometida con el desarrollo humano sostenible de Guatemala. Desde su creación ha promovido espacios para la migración laboral legal, regular y circular de los guatemaltecos.</p>
+<p>Asimismo, busca que los procesos de reclutamiento se realicen dentro un marco transparente, ético y dentro de la ley, a la vez que cuenta con un equipo experimentado en migración laboral para llevar a cabo todos los procesos en sus diferentes fases.</p>
+<p>El objetivo central de ComuGuate ha sido siempre la construcción de puentes entre empleadores canadienses y trabajadores guatemaltecos. De esta manera, se cumple una función bipartida que ofrece una oportunidad legal, segura, confiable y transparente a la fuerza laboral guatemalteca, así como, cumplir con la demanda de mano de obra calificada en el sector agrícola y no agrícola existente en Canadá.</p></div>
+<div class="about-photo"><img src="assets/img/sobre-nosotros.webp" alt="Trabajador guatemalteco"></div>
+</div><div class="wrap gallery-carousel" aria-label="Galería de ComuGuate">
+<div class="gallery-stage">
+<img class="gallery-photo gallery-photo-a active" alt="Trabajadores guatemaltecos" loading="lazy">
+<img class="gallery-photo gallery-photo-b" alt="Trabajadores guatemaltecos" loading="lazy">
+<div class="gallery-shade"></div>
+</div></div></section>
+<section class="section values reveal-section" id="servicios"><div class="wrap"><div class="section-title">NUESTRO COMPROMISO</div><h2>Lo que nos define</h2>
+<div class="three">
+<article class="info-card reveal-item" id="mision"><h3>MISIÓN</h3><p>Nuestra misión es crear una sociedad más justa, más consciente a través del trabajo que realizamos diariamente con todos los guatemaltecos, hombres y mujeres que viajan al extranjero a trabajar de forma honrada, aportando servicios de alta calidad a nuestros clientes más importantes, empleadores y trabajadores.</p></article>
+<article class="info-card reveal-item" id="valores"><h3>VALORES</h3><ul class="value-list"><li>Respeto</li><li>Transparencia</li><li>Responsabilidad</li><li>Empatía</li><li>Tolerancia</li></ul></article>
+<article class="info-card reveal-item" id="vision"><h3>VISIÓN</h3><p>Generar más empleo a trabajadores guatemaltecos y centroamericanos, para que puedan tener un desarrollo económico para ellos y sus familias. Brindar un excelente servicio tanto en Guatemala, países vecinos y en el extranjero.</p></article>
+</div></div></section>
+
+<section class="section evaluation reveal-section" id="evaluacion">
+  <div class="wrap">
+    <div class="section-title">DA EL PRIMER PASO</div>
+    <h2>Evaluación preliminar de tu perfil</h2>
+    <p class="eval-intro">Responde estas preguntas para conocer tu situación actual. Al finalizar recibirás una orientación inicial sobre los aspectos que ya tienes y los que podrías necesitar completar para avanzar hacia una oportunidad laboral en el extranjero.</p>
+    <div class="eval-card">
+      <form id="profileEvaluation">
+        <div class="eval-grid">
+          <div class="eval-field full"><label for="evName">1. ¿Cuál es tu nombre completo? <span class="eval-required">*</span></label><input id="evName" name="nombre" autocomplete="name" required></div>
+          <div class="eval-field"><label for="evAge">2. ¿Cuál es tu edad? <span class="eval-required">*</span></label><input id="evAge" name="edad" type="number" min="1" max="110" required></div>
+          <div class="eval-field"><label for="evPhone">4. ¿Cuál es tu número de contacto? <span class="eval-required">*</span></label><input id="evPhone" name="contacto" type="tel" autocomplete="tel" required></div>
+          <div class="eval-field"><label for="evCity">3. ¿En qué ciudad o municipio resides actualmente? <span class="eval-required">*</span></label><input id="evCity" name="ciudad" placeholder="Ej. Cobán" autocomplete="address-level2" required></div>
+          <div class="eval-field"><label for="evDepartment">Departamento <span class="eval-required">*</span></label><select id="evDepartment" name="departamento" autocomplete="address-level1" required><option value="">Selecciona tu departamento</option><option>Alta Verapaz</option><option>Baja Verapaz</option><option>Chimaltenango</option><option>Chiquimula</option><option>El Progreso</option><option>Escuintla</option><option>Guatemala</option><option>Huehuetenango</option><option>Izabal</option><option>Jalapa</option><option>Jutiapa</option><option>Petén</option><option>Quetzaltenango</option><option>Quiché</option><option>Retalhuleu</option><option>Sacatepéquez</option><option>San Marcos</option><option>Santa Rosa</option><option>Sololá</option><option>Suchitepéquez</option><option>Totonicapán</option><option>Zacapa</option></select></div>
+          <div class="eval-field full"><label for="evCountry">5. ¿En qué país estás interesado en trabajar? <span class="eval-required">*</span></label>
+            <select id="evCountry" name="destino" required>
+              <option value="">Selecciona una opción</option><option>🇺🇸 Estados Unidos</option><option>🇨🇦 Canadá</option><option>🇪🇸 España</option><option>🌎 Más de un país</option><option>🤔 No estoy seguro y necesito orientación</option>
+            </select>
+          </div>
+          <div class="eval-field full"><label for="evProfession">6. ¿Cuál es tu profesión u oficio? <span class="eval-required">*</span></label><input id="evProfession" name="profesion" placeholder="Escribe tu profesión u oficio" required></div>
+          <div class="eval-field full"><label for="evStudies">7. ¿Cuál es tu nivel de estudios? <span class="eval-required">*</span></label>
+            <select id="evStudies" name="estudios" required>
+              <option value="">Selecciona tu nivel de estudios</option><option>Primaria</option><option>Básicos</option><option>Diversificado</option><option>Técnico</option><option>Universitario</option><option>Posgrado</option><option>Ninguno</option>
+            </select>
+          </div>
+          <div class="eval-field full"><label for="evPassport">8. ¿Tienes pasaporte vigente? <span class="eval-required">*</span></label>
+            <select id="evPassport" name="pasaporte" required><option value="">Selecciona una opción</option><option>Sí</option><option>No</option><option>Está en trámite</option></select>
+          </div>
+        </div>
+        <button class="eval-submit" type="submit">EVALUAR MI PERFIL</button>
+        <p class="eval-note">Tus respuestas se utilizarán para esta evaluación preliminar y para que nuestro equipo pueda orientarte. La evaluación no constituye una oferta laboral ni garantiza una contratación o visa.</p>
+      </form>
+      <div class="eval-result" id="evalResult" aria-live="polite">
+        <h3 id="evalHeading">Tu resultado preliminar</h3>
+        <div class="eval-score" id="evalScore"></div>
+        <p id="evalSituation"></p>
+        <p><strong>Aspectos para revisar o completar:</strong></p>
+        <ul id="evalGaps"></ul>
+        <p>¡No tienes que hacerlo todo por tu cuenta! El equipo de ComuGuate puede orientarte y ayudarte a identificar y completar lo que haga falta para preparar tu perfil y valorar posibles oportunidades laborales, de acuerdo con los requisitos de cada proceso.</p>
+        <button type="button" class="eval-wa" id="sendEvalWhatsApp">ENVIAR MIS DATOS Y RESULTADO POR WHATSAPP</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats" id="empleadores"><div class="wrap stats-grid">
+<div class="stat"><svg class="stat-icon" viewBox="0 0 120 82" aria-hidden="true"><circle cx="29" cy="13" r="10"/><circle cx="91" cy="13" r="10"/><path d="M15 34Q20 25 30 25T45 37L51 51H69L75 37Q80 25 90 25T105 34L112 65H99L94 48L91 76H75L72 57H48L45 76H29L26 48L21 65H8Z"/><rect x="43" y="33" width="34" height="22" rx="3"/></svg><strong class="count-up" data-target="10000">+0</strong><span>Más de 10,000 personas se han sumado al trabajo circular.</span></div>
+<div class="stat"><svg class="stat-icon" viewBox="0 0 120 82" aria-hidden="true"><circle cx="28" cy="13" r="10"/><circle cx="92" cy="13" r="10"/><path d="M13 36Q18 25 29 25H42L49 39L38 50V76H20V50L11 65L3 60Z M107 36Q102 25 91 25H78L71 39L82 50V76H100V50L109 65L117 60Z"/><path d="M42 48H78M69 39L79 48L69 57M51 39L41 48L51 57" fill="none" stroke="#0d4b67" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg><strong class="count-up" data-target="3000">+0</strong><span>Más de 3,000 empleadores</span></div>
+<div class="stat"><svg class="stat-icon plane-icon" viewBox="0 0 120 82" aria-hidden="true"><path d="M114 40Q114 48 102 51L72 55L49 79H38L47 55L23 54L12 65H4L10 42L4 20H12L23 31L47 30L38 5H49L72 29L102 33Q114 35 114 40Z"/></svg><strong class="count-up" data-target="15">+0</strong><span>Con más de 15 sectores de trabajo</span></div>
+</div></section>
+<section class="section contact" id="contacto"><div class="wrap contact-grid">
+<div><div class="section-title">CONTACT US</div><h2>Póngase en contacto con nosotros</h2><p>Estamos para atender sus consultas.</p></div>
+<div>
+<div class="contact-item"><b>DIRECCIÓN</b>15 Avenida “A” 3-18 zona 13, Ciudad de Guatemala</div>
+<div class="contact-item"><b>PBX</b><a href="tel:+50251386096">+502 51386096</a></div>
+<div class="contact-item"><b>HORARIO</b>Lunes a viernes de 7:00 AM A 16:00 Horas<br>Sábado y domingo cerrado</div>
+</div></div></section>
+<section class="section" id="idiomas" style="padding:28px 0;text-align:center"><div class="wrap"><b>IDIOMAS</b> · Español</div></section>
+<section id="faq" style="display:none"></section><section id="noticias" style="display:none"></section><section id="prevencion" style="display:none"></section>
+</main>
+<a class="whatsapp-float" href="https://wa.me/50251386096" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><span class="wa-mark">◔</span></a>
+<footer><div class="wrap"><div class="foot-top"><img src="assets/img/logo-footer.webp" alt="ComuGuate"><div class="foot-links"><a href="#inicio">INICIO</a><a href="#quienes-somos">QUIÉNES SOMOS</a><a href="#servicios">SERVICIOS</a><a href="#empleadores">EMPLEADORES</a><a href="#contacto">CONTACTO</a></div></div><div class="copyright">© 2024 COMUGUATE. All rights reserved. · Agencia de reclutamiento</div></div></footer>
+<script>
+const slides=["assets/img/hero-1.webp", "assets/img/hero-2.webp", "assets/img/hero-3.webp", "assets/img/hero-4.webp", "assets/img/hero-5.webp", "assets/img/hero-6.webp", "assets/img/hero-7.webp"];
+let current=0, activeLayer=0;
+const hero=document.querySelector('.hero');
+const layerA=document.querySelector('.photo-a');
+const layerB=document.querySelector('.photo-b');
+function showHeroSlide(index){
+  current=index;
+  const next=activeLayer===0?layerB:layerA;
+  const previous=activeLayer===0?layerA:layerB;
+  next.style.backgroundImage=`url("${slides[index]}")`;
+  next.classList.remove('active');
+  void next.offsetWidth;
+  next.classList.add('active');
+  previous.classList.remove('active');
+  activeLayer=activeLayer===0?1:0;
+}
+showHeroSlide(0);
+setInterval(()=>showHeroSlide((current+1)%slides.length),7000);
+
+const galleryImages=['assets/img/galeria-1.webp', 'assets/img/galeria-2.webp', 'assets/img/galeria-3.webp', 'assets/img/galeria-4.webp'];
+let galleryIndex=0, galleryLayer=0;
+const galleryA=document.querySelector('.gallery-photo-a');
+const galleryB=document.querySelector('.gallery-photo-b');
+function showGallerySlide(index){
+  galleryIndex=index;
+  const next=galleryLayer===0?galleryB:galleryA;
+  const previous=galleryLayer===0?galleryA:galleryB;
+  next.src=galleryImages[index];
+  next.classList.remove('active');
+  void next.offsetWidth;
+  next.classList.add('active');
+  previous.classList.remove('active');
+  galleryLayer=galleryLayer===0?1:0;
+}
+showGallerySlide(0);
+setInterval(()=>showGallerySlide((galleryIndex+1)%galleryImages.length),7000);
+
+
+// Formulario y resultado de evaluación preliminar
+const evaluationForm=document.getElementById('profileEvaluation');
+if(evaluationForm){
+  let evaluationMessage='';
+  evaluationForm.addEventListener('submit',function(event){
+    event.preventDefault();
+    if(!evaluationForm.reportValidity()) return;
+    const data=new FormData(evaluationForm);
+    const age=Number(data.get('edad'));
+    const passport=data.get('pasaporte');
+    const studies=data.get('estudios');
+    const profession=data.get('profesion').trim();
+    const destination=data.get('destino');
+    let score=0, gaps=[];
+    if(age>=18) score+=20; else gaps.push('Verificar la edad mínima requerida para cada programa. La mayoría de procesos laborales internacionales requieren ser mayor de edad.');
+    if(passport==='Sí') score+=30;
+    else if(passport==='Está en trámite'){score+=15;gaps.push('Dar seguimiento al trámite y confirmar que el pasaporte esté vigente antes de cualquier proceso que lo requiera.');}
+    else gaps.push('Tramitar un pasaporte vigente cuando corresponda; es un documento importante para procesos internacionales.');
+    if(studies==='Ninguno') gaps.push('Revisar los requisitos educativos de las oportunidades disponibles; estos varían según el puesto y el empleador.');
+    else score+=20;
+    if(profession) score+=20;
+    if(destination.includes('No estoy seguro')) gaps.push('Recibir orientación para identificar destinos y programas compatibles con tu perfil.');
+    else score+=10;
+    if(!gaps.length) gaps.push('Mantener tus documentos e información actualizados y revisar los requisitos específicos de cada vacante.');
+    let heading, situation;
+    if(age<18){heading='Necesitas orientación antes de avanzar';situation='Por tu edad, es importante revisar primero los requisitos legales y de edad mínima de cada oportunidad. Esta evaluación no permite determinar elegibilidad.';}
+    else if(score>=70){heading='Tu perfil cuenta con varios elementos favorables';situation='Con la información que compartiste, ya cuentas con algunos elementos útiles para iniciar una revisión más detallada. Aún será necesario validar documentos, experiencia y requisitos de cada oportunidad.';}
+    else if(score>=40){heading='Tu perfil puede fortalecerse';situation='Tienes una base para comenzar, pero hay aspectos que conviene revisar o completar antes de valorar una postulación.';}
+    else{heading='Te recomendamos una orientación personalizada';situation='Hay información o documentación importante que conviene preparar. Nuestro equipo puede ayudarte a conocer los pasos adecuados para tu situación.';}
+    document.getElementById('evalHeading').textContent=heading;
+    document.getElementById('evalScore').textContent='Indicador orientativo: '+score+'/100 · No es una puntuación oficial de elegibilidad.';
+    document.getElementById('evalSituation').textContent=situation;
+    const list=document.getElementById('evalGaps');list.innerHTML='';
+    gaps.forEach(item=>{const li=document.createElement('li');li.textContent=item;list.appendChild(li);});
+    const lines=[
+      'EVALUACIÓN PRELIMINAR DE PERFIL - COMUGUATE',
+      'Nombre: '+data.get('nombre'),
+      'Edad: '+data.get('edad'),
+      'Ciudad: '+data.get('ciudad'),
+      'Departamento: '+data.get('departamento'),
+      'Contacto: '+data.get('contacto'),
+      'País de interés: '+data.get('destino'),
+      'Profesión u oficio: '+data.get('profesion'),
+      'Nivel de estudios: '+data.get('estudios'),
+      'Pasaporte vigente: '+data.get('pasaporte'),
+      '',
+      'RESULTADO: '+heading,
+      'Indicador orientativo: '+score+'/100 (no es una puntuación oficial de elegibilidad).',
+      situation,
+      'Aspectos por revisar: '+gaps.join(' | '),
+      '',
+      'Solicito orientación del equipo de ComuGuate.'
+    ];
+    evaluationMessage=lines.join('\n');
+    const result=document.getElementById('evalResult');
+    result.style.display='block';
+    result.scrollIntoView({behavior:'smooth',block:'center'});
+  });
+  document.getElementById('sendEvalWhatsApp').addEventListener('click',function(){
+    if(!evaluationMessage) return;
+    const url='https://wa.me/50251386096?text='+encodeURIComponent(evaluationMessage);
+    window.open(url,'_blank','noopener');
+  });
+}
+
+// Contadores rápidos que se activan al entrar la sección en pantalla.
+(function(){
+  const counters=document.querySelectorAll('.count-up');
+  if(!counters.length) return;
+  const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function animateCounter(el){
+    if(el.dataset.animated==='true') return;
+    el.dataset.animated='true';
+    const target=Number(el.dataset.target)||0;
+    if(reduced){el.textContent='+'+target.toLocaleString('en-US');return;}
+    const duration=1450, start=performance.now();
+    function tick(now){
+      const progress=Math.min((now-start)/duration,1);
+      const eased=1-Math.pow(1-progress,3);
+      el.textContent='+'+Math.floor(target*eased).toLocaleString('en-US');
+      if(progress<1) requestAnimationFrame(tick);
+      else el.textContent='+'+target.toLocaleString('en-US');
+    }
+    requestAnimationFrame(tick);
+  }
+  if('IntersectionObserver' in window){
+    const counterObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){animateCounter(entry.target);counterObserver.unobserve(entry.target);}}),{threshold:0.35});
+    counters.forEach(el=>counterObserver.observe(el));
+  } else counters.forEach(animateCounter);
+})();
+
+const revealObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');revealObserver.unobserve(entry.target);}})},{threshold:0.12});
+document.querySelectorAll('.reveal-section,.reveal-item').forEach(el=>revealObserver.observe(el));
+document.querySelectorAll('.floating-nav a').forEach(a=>a.addEventListener('click',()=>{document.querySelector('.floating-nav').classList.remove('open');document.querySelector('.floating-menu').setAttribute('aria-expanded','false')}));
+</script>
+</body></html>
